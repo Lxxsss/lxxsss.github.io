@@ -69,6 +69,7 @@ textarea:-ms-input-placeholder {
 
 .article-header {
   padding-bottom: 30px;
+  margin-right: 5px;
 }
 
 .gitment-header-like-btn svg {
