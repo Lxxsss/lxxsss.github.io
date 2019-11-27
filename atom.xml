@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-11-18T16:11:48.071Z</updated>
+  <updated>2019-11-27T10:11:04.109Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,11 +17,39 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Animated PNG</title>
+    <link href="http://yoursite.com/2018/11/27/Animated-PNG/"/>
+    <id>http://yoursite.com/2018/11/27/Animated-PNG/</id>
+    <published>2018-11-27T09:19:47.000Z</published>
+    <updated>2019-11-27T10:11:04.109Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="关于-Animated-PNG"><a href="#关于-Animated-PNG" class="headerlink" title="关于 Animated PNG"></a>关于 Animated PNG</h3><ul><li>Animated PNG 就是 PNG 格式的动画图片。</li><li>说到动画图片，大家能想到的首先是 GIF。但 GIF 最大的缺点是，图象是基于颜色列表的（存储的数据是该点的颜色对应于颜色列表的索引值），最多只支持 8 位（256 色）。这使得使用 GIF 格式不可能得到高清的动画图片。</li></ul><a id="more"></a><ul><li>Animated PNG 可以解决高清动画图片的问题。PNG 动画图片支持 24 位（1600W 色），并且支持 alpha 透明度。另外，GIF 动画每秒最多限制为 10 帧，PNG 动画则无此限制，因此可以得到更为细腻的动画效果。</li><li>Animated PNG 很早就在 Firefox 中得到支持，并且在 Safari 8+、chrome 59+ 也得到支持。也就是说，除了微软系浏览器外，最新的主流浏览器都支持 Animated PNG 了。</li></ul><p><img src="/assets/2/1.png" alt></p><h3 id="制作-Animated-PNG"><a href="#制作-Animated-PNG" class="headerlink" title="制作 Animated PNG"></a>制作 Animated PNG</h3><p>已经有很多工具支持制作 Animated PNG 图片，相信将来也会越来越多。<br>如果只是想体验一下制作的效果，可以使用这个站点来快速生成： <a href="http://littlesvr.ca/apng/assembler/assembler.php" target="_blank" rel="noopener">assembler</a><br>首先，你需要准备好每一帧所需要用到的图片。然后，参考下面的步骤操作。<br><img src="/assets/2/2.png" alt></p><h3 id="制作-Animated-PNG-的工具与方法参考"><a href="#制作-Animated-PNG-的工具与方法参考" class="headerlink" title="制作 Animated PNG 的工具与方法参考"></a>制作 Animated PNG 的工具与方法参考</h3><ul><li>使用 APNG Anime Maker 制作 apng <a href="http://howtech.tv/graphics/how-to-animate-png/" target="_blank" rel="noopener">http://howtech.tv/graphics/how-to-animate-png/</a></li><li>使用 GIF Movie Gear 制作 apng <a href="http://www.gamani.com/apng.htm" target="_blank" rel="noopener">http://www.gamani.com/apng.htm</a></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;关于-Animated-PNG&quot;&gt;&lt;a href=&quot;#关于-Animated-PNG&quot; class=&quot;headerlink&quot; title=&quot;关于 Animated PNG&quot;&gt;&lt;/a&gt;关于 Animated PNG&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Animated PNG 就是 PNG 格式的动画图片。&lt;/li&gt;
+&lt;li&gt;说到动画图片，大家能想到的首先是 GIF。但 GIF 最大的缺点是，图象是基于颜色列表的（存储的数据是该点的颜色对应于颜色列表的索引值），最多只支持 8 位（256 色）。这使得使用 GIF 格式不可能得到高清的动画图片。&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+    
+      <category term="web前端" scheme="http://yoursite.com/categories/web%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="css" scheme="http://yoursite.com/tags/css/"/>
+    
+      <category term="animation" scheme="http://yoursite.com/tags/animation/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Rinetd安装与应用</title>
-    <link href="http://yoursite.com/2018/11/27/Rinetd%E5%AE%89%E8%A3%85%E4%B8%8E%E5%BA%94%E7%94%A8/"/>
-    <id>http://yoursite.com/2018/11/27/Rinetd%E5%AE%89%E8%A3%85%E4%B8%8E%E5%BA%94%E7%94%A8/</id>
-    <published>2018-11-27T08:29:25.000Z</published>
-    <updated>2019-11-18T16:11:48.071Z</updated>
+    <link href="http://yoursite.com/2018/11/26/Rinetd%E5%AE%89%E8%A3%85%E4%B8%8E%E5%BA%94%E7%94%A8/"/>
+    <id>http://yoursite.com/2018/11/26/Rinetd%E5%AE%89%E8%A3%85%E4%B8%8E%E5%BA%94%E7%94%A8/</id>
+    <published>2018-11-26T08:29:25.000Z</published>
+    <updated>2019-11-27T09:22:24.961Z</updated>
     
     <content type="html"><![CDATA[<p>Rinetd是为在一个Unix和Linux操作系统中为重定向传输控制协议(TCP)连接的一个工具。</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 安装rinetd</span></span><br><span class="line">$ wget http://www.boutell.com/rinetd/http/rinetd.tar.gz</span><br><span class="line">$ tar -xvf ~/zhenyutest/rinetd.tar.gz</span><br><span class="line">$ <span class="built_in">cd</span> rinetd</span><br><span class="line">$ sed -i <span class="string">'s/65536/65535/g'</span> rinetd.c</span><br><span class="line">$ mkdir /usr/man/ &amp;&amp; make &amp;&amp; make install</span><br></pre></td></tr></table></figure><a id="more"></a><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 配置rinetd</span></span><br><span class="line">$ vim /etc/rinetd.conf</span><br><span class="line">0.0.0.0 8080 192.168.31.22 8080</span><br><span class="line"><span class="comment"># 本机ip 本机端口 外网ip 外网端口（外网机器也可以是内网ip，0.0.0.0表示所有）</span></span><br></pre></td></tr></table></figure><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 启动rinetd</span></span><br><span class="line">$ <span class="built_in">cd</span> rinetd &amp;&amp; rinetd</span><br></pre></td></tr></table></figure>]]></content>
     
