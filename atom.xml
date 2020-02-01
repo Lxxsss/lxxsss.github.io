@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-11-27T10:11:04.109Z</updated>
+  <updated>2020-02-01T09:08:29.372Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>解决MAC无法使用80端口的问题</title>
+    <link href="http://yoursite.com/2018/12/12/%E8%A7%A3%E5%86%B3MAC%E6%97%A0%E6%B3%95%E4%BD%BF%E7%94%A880%E7%AB%AF%E5%8F%A3%E7%9A%84%E9%97%AE%E9%A2%98/"/>
+    <id>http://yoursite.com/2018/12/12/%E8%A7%A3%E5%86%B3MAC%E6%97%A0%E6%B3%95%E4%BD%BF%E7%94%A880%E7%AB%AF%E5%8F%A3%E7%9A%84%E9%97%AE%E9%A2%98/</id>
+    <published>2018-12-12T09:31:40.000Z</published>
+    <updated>2020-02-01T09:08:29.372Z</updated>
+    
+    <content type="html"><![CDATA[<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 配置端口转发</span></span><br><span class="line">vim /etc/pf.conf</span><br><span class="line">添加</span><br><span class="line">rdr on lo0 inet proto tcp from any to 127.0.0.1 port 80 -&gt; 127.0.0.1 port 真实服务端口</span><br><span class="line">到 rdr-anchor <span class="string">"com.apple/*"</span> 行下</span><br></pre></td></tr></table></figure><a id="more"></a><p><img src="/assets/3/1.png" alt></p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 重启端口转发</span></span><br><span class="line">sudo pfctl -f /etc/pf.conf</span><br><span class="line">sudo pfctl -e</span><br><span class="line"><span class="comment"># 此时80端口转发至服务端口</span></span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      &lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# 配置端口转发&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;vim /etc/pf.conf&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;添加&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;rdr on lo0 inet proto tcp from any to 127.0.0.1 port 80 -&amp;gt; 127.0.0.1 port 真实服务端口&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;到 rdr-anchor &lt;span class=&quot;string&quot;&gt;&quot;com.apple/*&quot;&lt;/span&gt; 行下&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+    
+    </summary>
+    
+    
+      <category term="MAC" scheme="http://yoursite.com/categories/MAC/"/>
+    
+    
+      <category term="端口" scheme="http://yoursite.com/tags/%E7%AB%AF%E5%8F%A3/"/>
+    
+  </entry>
   
   <entry>
     <title>Animated PNG</title>
